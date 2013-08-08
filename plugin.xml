@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+   <extension
+         point="org.eclipse.ui.popupMenus">
+      <objectContribution
+            objectClass="org.eclipse.core.resources.IJavaProject"
+            id="JarImport.contribution1">
+         <menu
+               label="New Submenu example"
+               path="additions"
+               id="JarImport.menu1">
+            <separator
+                  name="group1">
+            </separator>
+         </menu>
+         <action
+               label="New Action example"
+               class="jarimport.popup.actions.NewAction"
+               menubarPath="JarImport.menu1/group1"
+               enablesFor="1"
+               id="JarImport.newAction">
+         </action>
+      </objectContribution>
+   </extension>
+   
+   
+
+<extension
+         point="org.eclipse.ui.popupMenus">
+      <objectContribution
+            objectClass="org.eclipse.jdt.core.IJavaProject"
+            id="menuplugin.contribution1">
+         <menu
+               label="lh+jar"
+               path="additions"
+               id="menuplugin.menu1">
+            <separator
+                  name="group1">
+            </separator>
+         </menu>
+         <action
+               label="ssh"
+               class="lhplugin.popup.SSHAction"
+               menubarPath="menuplugin.menu1/group1"
+               enablesFor="1"
+               id="menuplugin.SSHAction">
+         </action>
+         <action
+               label="luence"
+               class="lhplugin.popup.LunceneAction"
+               menubarPath="menuplugin.menu1/group1"
+               enablesFor="1"
+               id="menuplugin.lucenceAction">
+         </action>
+         <action
+               label="cxf"
+               class="lhplugin.popup.CxfAction"
+               menubarPath="menuplugin.menu1/group1"
+               enablesFor="1"
+               id="menuplugin.CxfAction">
+         </action>
+         <action
+               label="ftpserver"
+               class="lhplugin.popup.FtpServerAction"
+               menubarPath="menuplugin.menu1/group1"
+               enablesFor="1"
+               id="menuplugin.FtpServerAction">
+         </action>
+         <action
+               label="quartz"
+               class="lhplugin.popup.QuartzAction"
+               menubarPath="menuplugin.menu1/group1"
+               enablesFor="1"
+               id="menuplugin.quartzAction">
+         </action>
+          <action
+               label="log4j"
+               class="lhplugin.popup.Log4jAction"
+               menubarPath="menuplugin.menu1/group1"
+               enablesFor="1"
+               id="menuplugin.log4jAction">
+         </action>
+         <action
+               label="ant"
+               class="lhplugin.popup.AntAction"
+               menubarPath="menuplugin.menu1/group1"
+               enablesFor="1"
+               id="menuplugin.AntAction">
+         </action>
+          <action
+               label="hsqldb"
+               class="lhplugin.popup.HsqldbAction"
+               menubarPath="menuplugin.menu1/group1"
+               enablesFor="1"
+               id="menuplugin.HsqldbAction">
+         </action>
+         <action
+               label="velocity"
+               class="lhplugin.popup.VelocityAction"
+               menubarPath="menuplugin.menu1/group1"
+               enablesFor="1"
+               id="menuplugin.VelocityAction">
+         </action>
+          <action
+               label="struts2"
+               class="lhplugin.popup.Struts2Action"
+               menubarPath="menuplugin.menu1/group1"
+               enablesFor="1"
+               id="menuplugin.Struts2Action">
+         </action>
+      </objectContribution>
+   </extension>
+
+ 
+
+
+</plugin>
